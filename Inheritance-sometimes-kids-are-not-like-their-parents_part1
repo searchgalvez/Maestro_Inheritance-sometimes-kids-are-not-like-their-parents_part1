@@ -1,0 +1,13 @@
+class Character:
+    def attack(self):
+        print("Basic punch: 5 damage")
+
+class Wizard(Character):
+    def attack(self):
+        print("Fireball: 20 damage")
+
+hero = Character()
+mage = Wizard()
+
+hero.attack()
+mage.attack()
