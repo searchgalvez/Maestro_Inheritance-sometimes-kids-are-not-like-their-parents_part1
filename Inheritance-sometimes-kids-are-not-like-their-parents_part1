@@ -1,13 +1,29 @@
 class Character:
     def attack(self):
+        '''launches a basic punch, does 5 damage'''
         print("Basic punch: 5 damage")
 
 class Wizard(Character):
     def attack(self):
+        '''cast a fireball that deals 20 damage'''
         print("Fireball: 20 damage")
+
+class Warrior(Character):
+    def attack(self):
+        '''slashes foe with a sword deals 15 damage'''
+        print("Sword slash: 15 damage")
+
+class Archer(Character):
+    def attack(self):
+        '''shoots an arrow dealing 10 damage'''
+        print("Arrow shot: 10 damage")
 
 hero = Character()
 mage = Wizard()
+orc = Warrior()
+elf = Archer()
 
 hero.attack()
 mage.attack()
+orc.attack()
+elf.attack()
